@@ -64,6 +64,7 @@ a {
 .header__container {
     display: flex;
     align-items: center;
+    min-width: 80px;
 }
 
 
@@ -97,8 +98,7 @@ a {
 
 }
 
-.nav__iteam--header,
-.contact__iteam--header {
+.nav__iteam--header {
     padding-top: 24px;
     padding-bottom: 24px;
 }
@@ -120,6 +120,9 @@ a {
     text-decoration: none;
     padding-top: 24px;
     padding-bottom: 24px;
+    display: flex;
+    align-items: center;
+
 }
 
 .nav__link--header:hover,
@@ -137,7 +140,7 @@ a {
 
 .icon-envelope,
 .icon-smartphone {
-    padding-right: 10px;
+    margin-right: 10px;
 
 }
 
@@ -147,11 +150,13 @@ a {
 /* -----------------------MAIN--------------------------- */
 
 .herow {
-    background: var(--fons-background-color);
+    background-image: url(../img/hero-img.jpg);
+    padding: 0px;
 
 }
 
 .herow__container {
+    background: rgba(47, 48, 58, 0.40);
     padding-top: 200px;
     padding-bottom: 200px;
     display: flex;
@@ -160,6 +165,7 @@ a {
     align-items: center;
     gap: 30px;
 }
+
 
 .herow__title {
     color: var(--hero-text-color);
@@ -203,11 +209,7 @@ a {
     padding-bottom: 0px;
 }
 
-/* 
-.features__container {
-    padding-top: 94px;
-    padding-bottom: 94px;
-} */
+
 
 .features__list {
     display: flex;
@@ -215,6 +217,10 @@ a {
     gap: 30px;
 
 }
+.features__item{
+    
+}
+
 
 .features__title {
     font-weight: 700;
