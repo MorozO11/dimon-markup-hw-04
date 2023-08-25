@@ -14,7 +14,7 @@
         rel="stylesheet">
 </head>
 
-<body class="body">
+<body>
     <header class="header">
         <div class="container header__container">
             <a href="#" class="heder__logo"><span>Web</span>Studio</a>
@@ -29,13 +29,13 @@
 
             <ul class="contact">
                 <li class="contact__iteam--header"><a href="mailto:info@devstudio.com" class="nav__link--header">
-                        <svg class="icon-envelope" width="16" height="12" >
-                            <use href="./img/icons.svg/symbol-defs.svg#icon-envelope"></use>
+                        <svg class="icon-envelope" width="16" height="12">
+                            <use href="./img/icons/symbol-defs.svg#icon-envelope"></use>
                         </svg>info@devstudio.com</a></li>
                 <li class="contact__iteam--header"><a href="tel:+380961111111" class="nav__link--header">
-                    <svg class="icon-smartphone" width="10" height="16"  >
-                        <use href="./img/icons.svg/symbol-defs.svg#icon-smartphone"></use>
-                    </svg>+38 096 111 11
+                        <svg class="icon-smartphone" width="10" height="16">
+                            <use href="./img/icons/symbol-defs.svg#icon-smartphone"></use>
+                        </svg>+38 096 111 11
                         11</a>
                 </li>
             </ul>
@@ -43,7 +43,7 @@
 
     </header>
     <main>
-        <section class="herow container">
+        <section class="herow">
             <div class="container herow__container">
                 <h1 class="herow__title">Ефективні рішення для вашого бізнесу</h1>
                 <button type="button" class="herow__button">Замовити послугу</button>
@@ -53,34 +53,46 @@
             <div class="container features__container">
                 <ul class="features__list">
                     <li class="features__item">
-                        <svg class="features__icon">
-                    <use href="./img/icons.svg/symbol-defs-2.svg#icon-antenna" width="70px" height="70px"></use>
-                        </svg>
+                        <div class="features__box">
+                            <svg class="features__icon" width="70px" height="70px">
+                                <use href="./img/icons/symbol-defs-2.svg#icon-antenna"></use>
+                            </svg>
+                        </div>
                         <h3 class="features__title">УВАГА ДО ДЕТАЛЕЙ</h3>
                         <p class="features__text">Ідейні міркування, і навіть початок повсякденної роботи з формування
                             позиції.
                         </p>
                     </li>
                     <li class="features__item">
-                        <svg>
-                            <use href="./img/icons.svg/symbol-defs-2.svg#icon-clock" width="70px" height="70px"></use>
-                                </svg>
+                        <div class="features__box">
+                            <svg class="features__icon" width="70px" height="70px">
+                                <use href="./img/icons/symbol-defs-2.svg#icon-clock">
+                                </use>
+                            </svg>
+                        </div>
                         <h3 class="features__title">ПУНКТУАЛЬНІСТЬ</h3>
                         <p class="features__text">Завдання організації, особливо рамки і місце навчання кадрів тягне у
                             себе.
                         </p>
                     </li>
                     <li class="features__item">
-                        <svg>
-                            <use href="./img/icons.svg/symbol-defs-2.svg#icon-diagram" width="70px" height="70px"></use>
-                                </svg>
+                        <div class="features__box">
+                            <svg class="features__icon" width="70px" height="70px">
+                                <use href="./img/icons/symbol-defs-2.svg#icon-diagram">
+                                </use>
+                            </svg>
+                        </div>
                         <h3 class="features__title">ПЛАНУВАННЯ</h3>
                         <p class="features__text">Так само консультація з широким активом значною мірою зумовлює.</p>
-                    </li>      
+                    </li>
                     <li class="features__item">
-                        <svg>
-                            <use href="./img/icons.svg/symbol-defs-2.svg#icon-astronaut" width="70px" height="70px"></use>
-                                </svg>
+                        <div class="features__box">
+                            <svg class="features__icon" width="70px" height="70px">
+                                <use href="./img/icons/symbol-defs-2.svg#icon-astronaut">
+                                </use>
+                            </svg>
+                        </div>
+
                         <h3 class="features__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
                         <p class="features__text">Значимість цих проблем настільки очевидна, що реалізація планових
                             завдань.
@@ -104,22 +116,36 @@
                 <h2 class="team__title">Наша команда</h2>
                 <ul class="team__list">
                     <li class="team__card">
-                        <img src="./img/img1.jpg" alt="чоловік" width="270">
+                        <img src="./img/img1.jpg" alt="чоловік">
                         <h3 class="team__name">Ігор Дем'яненко</h3>
                         <p class="team__specialty">Product Designer</p>
+                        <div class="team__social">
+                            <ul class="social__list">
+                                <li class="social__item">
+                                    <a href="" class="social__link">
+                                        <svg class="social__icon" width="20px" height="20px">
+                                            <use href="./img/icons/social-icon.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item"><a href="" class="social__link"></a></li>
+                                <li class="social__item"><a href="" class="social__link"></a></li>
+                                <li class="social__item"><a href="" class="social__link"></a></li>
+                            </ul>
+                        </div>
                     </li>
                     <li class="team__card">
-                        <img src="./img/img2.jpg" alt="жінка" width="270">
+                        <img src="./img/img2.jpg" alt="жінка">
                         <h3 class="team__name">Ольга Рєпіна</h3>
                         <p class="team__specialty">Frontend Developer</p>
                     </li>
                     <li class="team__card">
-                        <img src="./img/img3.jpg" alt="чоловік" width="270">
+                        <img src="./img/img3.jpg" alt="чоловік">
                         <h3 class="team__name">Микола Тарасов</h3>
                         <p class="team__specialty">Marketing</p>
                     </li>
                     <li class="team__card">
-                        <img src="./img/img4.jpg" alt="чоловік" width="270">
+                        <img src="./img/img4.jpg" alt="чоловік">
                         <h3 class="team__name">Михайло Єрмаков</h3>
                         <p class="team__specialty">UI Designer</p>
                     </li>
