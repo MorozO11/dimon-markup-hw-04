@@ -8,6 +8,8 @@
     --hero-text-color: #FFF;
     --team-background-color: #F5F4FA;
     --border-backgraund-color: #EEE;
+    --border-client-color: #AFB1B8;
+
 }
 
 * {
@@ -300,6 +302,7 @@ a {
     align-items: center;
     justify-content: center;
     column-gap: 10px;
+    margin-bottom: 30px;
 }
 
 .social__item {
@@ -343,10 +346,45 @@ a {
     background: var(--team-background-color)
 }
 
-/* .team__container {
-    padding-bottom: 94px;
-    padding-top: 94px;
-} */
+/* Постійні клієнти */
+
+.client__title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
+    margin-bottom: 50px;
+}
+
+.client__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.client__link {
+    fill: var(--border-client-color);
+    border-radius: 4px;
+    border: 1px solid var(--border-client-color);
+    width: 170px;
+    height: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+.client__link:hover{
+fill: var(--action-hover-color);
+border-color:var(--action-hover-color);
+}
+    
+   
+   
+
 
 /* PPRTFOLIO */
 
