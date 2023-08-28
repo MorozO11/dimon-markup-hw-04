@@ -260,6 +260,18 @@ a {
 }
 
 
+.box__title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
+    margin-bottom: 50px;
+}
+
+
+
+
 .team__card {
     border-radius: 0px 0px 4px 4px;
     background: var(--hero-text-color);
@@ -377,13 +389,13 @@ a {
 }
 
 
-.client__link:hover{
-fill: var(--action-hover-color);
-border-color:var(--action-hover-color);
+.client__link:hover {
+    fill: var(--action-hover-color);
+    border-color: var(--action-hover-color);
 }
-    
-   
-   
+
+
+
 
 
 /* PPRTFOLIO */
@@ -460,6 +472,11 @@ border-color:var(--action-hover-color);
     flex: 0 1 calc(1200px / 3 - 30px);
 }
 
+.projekt:hover,
+.projekt:active{
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+
 /* ---------------FOOTER---------------------------- */
 .footer {
     background: var(--fons-background-color);
@@ -469,7 +486,9 @@ border-color:var(--action-hover-color);
 }
 
 
-
+.address__box{
+    margin-right: 70px;
+}
 
 .address {
     color: var(--adres-text-color);
@@ -522,4 +541,51 @@ border-color:var(--action-hover-color);
 .nav__link--footer:focus {
     color: var(--link-text-color);
 
+}
+
+.footer__container{
+    display: flex;
+}
+
+
+
+.social__list--footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+.footer__title{
+color: #FFF;
+font-size: 14px;
+letter-spacing: 0.42px;
+text-transform: uppercase;
+padding-bottom: 20px;
+margin-top: 10px;
+}
+
+.social__item--footer {
+    border-radius: 50%;
+    background-color: #3a3b47;
+}
+
+.social__link--footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    color: #FFF;
+}
+
+.social__icon--footer {
+    fill: currentColor;
+}
+
+
+.social__link--footer:hover,
+.social__link--footer:focus {
+    background-color: var(--link-text-color);
+    
 }
